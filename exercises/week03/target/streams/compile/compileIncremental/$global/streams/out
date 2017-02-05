@@ -1,0 +1,61 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/jd/MSc/SDP-2017/exercises/week03/target/scala-2.12/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
+[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.12.1  with arguments: [0m
+[0m[[0mdebug[0m] [0m	-nowarn[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_a72239a3[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/jd/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/jd/.sbt/boot/scala-2.10.4/org.scala-sbt/sbt/0.13.8/xsbti/interface-0.13.8.jar:/Users/jd/.sbt/boot/scala-2.10.4/org.scala-sbt/sbt/0.13.8/compiler-interface-src/compiler-interface-src-0.13.8.jar:/Users/jd/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.1.jar:/Users/jd/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar:/Users/jd/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar:/Users/jd/.ivy2/cache/jline/jline/jars/jline-2.14.1.jar[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/API.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Analyzer.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Command.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Compat.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/CompilerInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/ConsoleInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/DelegatingReporter.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Dependency.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/ExtractAPI.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/ExtractUsedNames.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/LocateClassFile.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Log.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/Message.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/pk/rg3lyq0n36sdcd2h_xh0v9440000gn/T/sbt_d167f2c8/xsbt/ScaladocInterface.scala[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 602f0075, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes:/Users/jd/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/jd/MSc/SDP-2017/exercises/week03/target/scala-2.12/classes:/Users/jd/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.1.jar:/Users/jd/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar:/Users/jd/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 9.00410159 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala)[0m
+[0m[[0mdebug[0m] [0mThe /Users/jd/MSc/SDP-2017/exercises/week03/src/main/scala/basics/ScalaBasics.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, minRecursive, wait, $asInstanceOf, isPalindrome, equals, asInstanceOf, synchronized, ScalaBasics, $isInstanceOf, minWhile, base36, notifyAll, isInstanceOf, splitInHalf, ==, clone, oddRange, toString, !=, getClass, minFor, ne, add, inRange, wordCounter, eq, ##, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
