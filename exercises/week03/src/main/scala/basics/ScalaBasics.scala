@@ -10,13 +10,13 @@ import scala.collection.JavaConverters._
 object ScalaBasics {
 
   /**
-   * Write a function called add that takes two Int parameters
-   * and returns their sum.
-   *
-   * @param a operand a
-   * @param b operand b
-   * @return the sum
-   */
+    * Write a function called add that takes two Int parameters
+    * and returns their sum.
+    *
+    * @param a operand a
+    * @param b operand b
+    * @return the sum
+    */
 
   def add(a: Int, b: Int): Int = {
     var sum = 0
@@ -25,59 +25,59 @@ object ScalaBasics {
   }
 
   /**
-   * Write a function that returns the inclusive Range from start to end.
-   *
-   * HINT: Look at the Scaladoc for Int/RichInt to find the answer.
-   *
-   * @param start the start of the range
-   * @param end the end of the range
-   * @return the inclusive Range from start to end
-   */
+    * Write a function that returns the inclusive Range from start to end.
+    *
+    * HINT: Look at the Scaladoc for Int/RichInt to find the answer.
+    *
+    * @param start the start of the range
+    * @param end   the end of the range
+    * @return the inclusive Range from start to end
+    */
   def inRange(start: Int, end: Int): Range = {
     val range1 = Range.inclusive(start, end)
-    return(range1)
-    }
+    return (range1)
+  }
 
   /**
-   * Write a function that returns a Range of odd n odd integers starting at 1.
-   *
-   * HINT: Look at the Scaladoc for Int/RichInt to find the answer.
-   *
-   * @param n the number of odd integers in the range
-   * @return a Range of odd integers, excluding the last add integer
-   */
+    * Write a function that returns a Range of odd n odd integers starting at 1.
+    *
+    * HINT: Look at the Scaladoc for Int/RichInt to find the answer.
+    *
+    * @param n the number of odd integers in the range
+    * @return a Range of odd integers, excluding the last add integer
+    */
   def oddRange(n: Int): Range = {
     val x = 1 to n by 2
     return x
   }
 
   /**
-   * Write a function that returns the minimum integer in the Array r.
-   *
-   * Your implementation must conform to the following rules:
-   *{
-   * - You must use a while loop.
-   * - You may use both immutable (val) and mutable (var) variables.
-   * - You must use an if expression.
-   *
-   * @param r the array of integers
-   * @return the minimum integer in the array
-   */
-  def minWhile(Nums: Array[Int]): Int = ???
-//    var count = 0
-//    var min = Nums(1)
-//
-//    {
-//      while (count < Nums.length -1)
-//        if (Nums(count) < min) {
-//          min = Nums(count)
-//          count = count + 1
-//        }
-//        else {
-//          count = count + 1
-//        }
-//    }
-//  }
+    * Write a function that returns the minimum integer in the Array r.
+    *
+    * Your implementation must conform to the following rules:
+    * {
+    * - You must use a while loop.
+    * - You may use both immutable (val) and mutable (var) variables.
+    * - You must use an if expression.
+    *
+    * @param r the array of integers
+    * @return the minimum integer in the array
+    */
+  def minWhile(Nums: Array[Int]): Int = {
+
+    var count = 0
+    var min = Nums(1)
+
+    while (count < Nums.length)
+      if (Nums(count) < min) {
+        min = Nums(count)
+        count = count + 1
+      }
+      else {
+        count = count + 1
+      }
+    return min
+  }
 
   /**
    * Write a function that returns the minimum integer in the Array r.
@@ -114,11 +114,11 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minRecursive(r: Array[Int]): Int = ???
-
-
-
-
+//  def minRecursive(r: Array[Int]): Int = r match {
+//      case Nil => throw new NoSuchElementException("The list is empty")
+//      case x :: Nil => x
+//      case x :: tail => x.max(max(tail)) //x.max is Integer's class method
+//    }
 
   /**
    * Return the base 36 equivalent of the BitInt b.
