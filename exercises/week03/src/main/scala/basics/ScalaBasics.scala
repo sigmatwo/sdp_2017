@@ -114,11 +114,7 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-//  def minRecursive(r: Array[Int]): Int = r match {
-//      case Nil => throw new NoSuchElementException("The list is empty")
-//      case x :: Nil => x
-//      case x :: tail => x.max(max(tail)) //x.max is Integer's class method
-//    }
+  def minRecursive(r: Array[Int]): Int = ???
 
   /**
    * Return the base 36 equivalent of the BitInt b.
