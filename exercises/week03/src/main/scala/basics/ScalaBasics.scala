@@ -35,7 +35,7 @@ object ScalaBasics {
     */
   def inRange(start: Int, end: Int): Range = {
     val range1 = Range.inclusive(start, end)
-    return (range1)
+    range1
   }
 
   /**
@@ -48,7 +48,7 @@ object ScalaBasics {
     */
   def oddRange(n: Int): Range = {
     val x = 1 to n by 2
-    return x
+    x
   }
 
   /**
@@ -76,7 +76,7 @@ object ScalaBasics {
       else {
         count = count + 1
       }
-    return min
+    min
   }
 
   /**
@@ -147,7 +147,22 @@ object ScalaBasics {
    * @param s the string to split
    * @return the split string as a tuple
    */
-  def splitInHalf(s: String): (String, String) = ???
+  def splitInHalf(s: String): (String, String) = s match {
+    case n if s.length() %2 == 0 => "this is even"
+    case n if s.length() %2 != 0 => "this is not even"
+
+  }
+
+
+
+
+  def describe(x: Int) = x match {
+    case n if n < 0 => s"$nisnegative"
+    case n if n==0 => "That'sazero"
+    case n if n%2==0 => s"$nisanevennumber"
+    case n if n%2!=0 => s"$nisanoddnumber"
+    case _ => "How did I get here?"
+  }
 
   /**
    * Determines if the given string s is a palindrome.
