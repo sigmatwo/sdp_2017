@@ -7,3 +7,5 @@ class SmokeSensor extends Sensor {
 
   override def getBatteryPercentage: Double = -1
 }
+
+
