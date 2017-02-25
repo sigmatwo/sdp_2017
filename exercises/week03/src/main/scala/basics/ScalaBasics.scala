@@ -174,7 +174,26 @@ object ScalaBasics {
       * @param s the potential palindrome
       * @return true if s is a palindrome; false otherwise
       */
-    //def isPalindrome(s: String): Boolean = ???
+
+    def isPalindrome(s: String): Boolean = {
+
+      val y = s.reverse
+
+      for (i <- 0 until s.length()) {
+        if (s(i) != y(i))
+          return false
+      }
+      true
+}
+
+
+  // tried with pattern matching as wll, far more elegant to my mind
+
+    def isPalindrome(s: String): Boolean = s match {
+      case m if s == s.reverse => True
+      case n if s != s.reverse => False
+    }
+
 
     /**
       * You don't have to complete this one as we've removed it from the list
