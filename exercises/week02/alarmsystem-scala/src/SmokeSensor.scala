@@ -1,4 +1,5 @@
 class SmokeSensor extends Sensor {
+
   override def isTriggered: Boolean = false
 
   override def getLocation: String = null

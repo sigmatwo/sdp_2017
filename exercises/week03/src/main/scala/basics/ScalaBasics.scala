@@ -114,7 +114,39 @@ object ScalaBasics {
     * @param r the array of integers
     * @return the minimum integer in the array
     */
-  def minRecursive(r: Array[Int]): Int = ???
+//  def max(r: Array[Int]): Int = {
+//      if (r.length == 1) r(0)
+//      else if (r(0) > r(1)) r.remove(1)
+//      else r.remove(0)
+//    return max(r)
+//  }
+//
+//
+//  def minRecursive(r: Array[Int]): Array[Int] = r match {
+//    case a if r.length == 1 => r(0)
+//    case b if r(0) > r(1) => r.take(0)
+//    case c if r(0) < r(1) => r.take(1)
+//    case d if r.length !=1 => minRecursive(r)
+//  }
+//
+//  def multOfThreeAndFive(n: Double): Double = {
+//    @annotation.tailrec
+//    def loop(next: Double, acc: Double): Double = {
+//      if (next < 0) acc
+//      else if (next % 3 == 0 || next % 5 == 0) loop(next - 1, acc + next)
+//      else loop(next - 1, acc)
+//    }
+//    loop(n - 1, 0)
+//  }
+
+
+  def max(y: Array[Int]): Int = {
+    def maxrec(cMax : Int, l: Array[Int]): Int = l match {
+      case Nil => cMax
+      case head::tail => maxrec(head.max(cMax), tail) //get max of head and curretn max
+    }
+    maxrec(y.head, y)
+  }
 
   /**
     * Return the base 36 equivalent of the BitInt b.
@@ -124,7 +156,7 @@ object ScalaBasics {
     * @param b a big integer
     * @return the base 36 equivalent
     */
-  def base36(b: BigInt): String = ???
+  def base36(b: BigInt): String = b.toString(36)
 
   /**
     * Splits the String s in half.
@@ -177,7 +209,7 @@ object ScalaBasics {
 
     def isPalindrome(s: String): Boolean = {
 
-      val y = s.reverse
+      val y = s.reverse /// still need to eliminate characters
 
       for (i <- 0 until s.length()) {
         if (s(i) != y(i))
