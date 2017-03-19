@@ -2,12 +2,26 @@ package observer
 
 import scala.collection.mutable.ListBuffer
 
-class CommentaryObject(var subscribers: ListBuffer[Observer], val title: String) extends Subject {
-  def subscribeObserver(observer: Observer) = ???
+class CommentaryObject(var observers: ListBuffer[Observer],
+                       val title: String) extends Subject {
 
-  def unSubscribeObserver(observer: Observer) = ???
+  private var desc: String = _
 
-  def notifyObservers() = ???
+  override def subscribeObserver(observer: Observer): Unit = {
+    observers.add(observer)
+  }
+
+  def unSubscribeObserver(observer: Observer): Unit = {
+    val index: Int = observers.indexOf(observer)
+    observers.remove(index)
+  }
+
+  def notifyObservers(): Unit = {
+    println()
+    for (observer <- observers) {
+      observer.update(desc)
+    }
+  }
 
   def subjectDetails: String = ???
 }

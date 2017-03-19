@@ -1,7 +1,3 @@
-/**
-  * Created by jd on 12/03/2017.
-  */
-
 package Film
 
 class Film(var name: String, var yearOfRelease: Int, var imdbRating: Double, var director: Director) {

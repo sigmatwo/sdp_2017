@@ -1,5 +1,7 @@
 package decorator
 
+// The first of two concrete classes
+
 class SimplyNonVegPizza extends Pizza {
 
   override def getDesc(): String = "SimplyVegPizza (230)"

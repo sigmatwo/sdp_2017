@@ -1,7 +1,3 @@
-/**
-  * Created by jd on 12/03/2017.
-  */
-
 package Film
 
 class Director(var firstName: String, var lastName: String, var yearOfBirth: Int) {
