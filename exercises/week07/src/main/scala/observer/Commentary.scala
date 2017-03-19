@@ -1,5 +1,5 @@
-package observer
-
-trait Commentary {
-  def setDesc(desc: String)
-}
+//package observer
+//
+//trait Commentary {
+//  def setDesc(desc: String)
+//}

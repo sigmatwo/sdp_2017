@@ -1,30 +1,30 @@
 package xpay
 
-import scala.beans.{BeanProperty}
 
+import scala.beans.BeanProperty
 
 class XpayToPayDAdapter(private val xpay: Xpay) extends PayD {
-
-  @BeanProperty
-  var custCardNo: String = _
 
   @BeanProperty
   var cardOwnerName: String = _
 
   @BeanProperty
-  var cardExpMonthDate: String = _
+  var custCardNo: String = _
 
-  private var CVVNo: java.lang.Integer = _
+  private var cVVNo: Integer = _
 
   @BeanProperty
-  var totalAmount: java.lang.Double = _
+  var totalAmount: Double = _
+
+  @BeanProperty
+  var cardExpMonthDate: String = _
 
   setProp()
 
-  override def getCVVNo(): java.lang.Integer = cVVNo
+  override def getCVVNo(): Integer = cVVNo
 
-  override def setCVVNo(cVVNo: java.lang.Integer): Unit = {
-    this.cVVNo = CVVNo
+  override def setCVVNo(cVVNo: Integer): Unit = {
+    this.cVVNo = cVVNo
   }
 
   private def setProp(): Unit = {
@@ -33,7 +33,7 @@ class XpayToPayDAdapter(private val xpay: Xpay) extends PayD {
     this.cardExpMonthDate = this.xpay.getCardExpMonth + "/" + this.xpay.getCardExpYear
     this.cVVNo = this.xpay.getCardCVVNo.intValue()
     this.totalAmount = this.xpay.getAmount
-
   }
 
 }
+
